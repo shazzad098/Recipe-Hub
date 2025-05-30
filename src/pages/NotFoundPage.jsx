@@ -1,8 +1,13 @@
 import React from 'react'
+import Header from '../components/Header.jsx'
+
 
 const NotFoundPage = () => {
   return (
-    <div>NotFoundPage</div>
+    <div>
+      <Header />
+      <h1>404 - Page Not Found</h1>
+    </div>
   )
 }
 

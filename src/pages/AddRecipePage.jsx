@@ -1,8 +1,12 @@
 import React from 'react'
+import Header from '../components/Header.jsx'
 
 const AddRecipePage = () => {
   return (
-    <div>AddRecipePage</div>
+    <div>
+      <Header />
+      <h1>Add New Recipe</h1>
+    </div>
   )
 }
 

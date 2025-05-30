@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Hamburger from "hamburger-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,16 +25,13 @@ const Header = () => {
             <div className="absolute top-full left-0 w-full bg-orange-300 text-white shadow-lg z-50 mt-1 divide-y divide-gray-400">
               <ul className="py-2">
                 <li className="px-4 py-3 hover:bg-orange-500 transition-colors">
-                  <a href="/">Home</a>
+                  <Link to="/">Home Page</Link>
                 </li>
                 <li className="px-4 py-3 hover:bg-orange-500 transition-colors">
-                  <a href="/about">About</a>
+                  <Link to="/AddRecipePage">Add New Recipe</Link>
                 </li>
                 <li className="px-4 py-3 hover:bg-orange-500 transition-colors">
-                  <a href="/contact">Contact</a>
-                </li>
-                <li className="px-4 py-3 hover:bg-orange-500 transition-colors">
-                  <a href="/blog">Blog</a>
+                  <Link to="/contact">Contact</Link>
                 </li>
               </ul>
             </div>
@@ -42,24 +40,19 @@ const Header = () => {
           <nav className="hidden md:block text-center">
             <ul className="flex justify-center gap-6 text-lg font-semibold">
               <li>
-                <a className="hover:text-purple-500" href="/">
-                  Home
-                </a>
+                <Link className="hover:text-purple-500" to="/">
+                  Home Page
+                </Link>
               </li>
               <li>
-                <a className="hover:text-purple-500" href="/about">
-                  About
-                </a>
+                <Link className="hover:text-purple-500" to="/AddRecipePage">
+                  Add New Recipe
+                </Link>
               </li>
               <li>
-                <a className="hover:text-purple-500" href="/contact">
+                <Link className="hover:text-purple-500" to="/contact">
                   Contact
-                </a>
-              </li>
-              <li>
-                <a className="hover:text-purple-500" href="/blog">
-                  Blog
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>

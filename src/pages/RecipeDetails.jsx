@@ -1,8 +1,13 @@
 import React from 'react'
+import Header from '../components/Header.jsx'
+
 
 const RecipeDetails = () => {
   return (
-    <div>RecipeDetails</div>
+    <div>
+      <Header />
+      <h1>Recipe Details</h1>
+    </div>
   )
 }
 
